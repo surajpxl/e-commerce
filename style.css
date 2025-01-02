@@ -1,0 +1,526 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Roboto', sans-serif;
+  
+}
+body{
+  background-color: #eeee;
+
+}
+nav{
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeee;
+  padding: 17px;
+  box-shadow: 0px 2px 2px 2px rgb(219, 139, 139);
+}
+nav .logo{
+  margin-left: 22px;
+  font-size: 24px;
+}
+ul{
+  margin-right: 45px;
+  margin-top: 7px;
+}
+nav ul li{
+  list-style: none;
+}
+ul li a{
+  margin-inline: 22px;
+  font-size: 20px;
+}
+ul li i{
+  font-size: 22px;
+}
+ul li #home{
+  color: rgb(5, 167, 167);
+}
+ul li a:hover{
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+ul li i:hover{
+  color: gray;
+  cursor: pointer;
+}
+.main{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.main .mainText{
+  margin-top: 114px;
+  
+}
+.mainText h1{
+  font-size: 64px;
+  font-family: 'Dancing Script', cursive;
+  
+}
+.mainText .top{
+  color: rgb(4, 138, 138);
+}
+.mainText .btn1{
+  width: 115px;
+  height: 40px;
+  background-color: rgb(4, 140, 140);
+  border: none;
+  font-size: 22px;
+  color: white;
+  margin-top: 24px;
+}
+.mainText .btn2{
+  margin-left: 3px;
+  width: 115px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  font-size: 22px;
+  border: 1px solid black;
+  color: rgb(0, 0, 0);
+  margin-top: 24px;
+}
+.mainText p{
+  margin-top: 12px;
+}
+.mainText button:hover{
+  border: 3px solid rgb(3, 128, 128);
+  background-color: transparent;
+  color: rgb(2, 121, 121);
+}
+
+.head h1{
+  text-align: center;
+  padding: 33px;
+  margin-top: 32px;
+}
+.head span{
+  color: rgb(2, 164, 164);
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+}
+.card .crd{
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  margin-inline: 11px;
+ 
+}
+.crd img{
+  width: 85%;
+  padding: 22px;
+  border-radius: 31px;
+  transition: transform 0.3s ease,  0.3s ease;
+
+}
+.crd img:hover{
+  transform: scale(1.1);
+}
+.crdText{
+  margin-left: 16px;
+  padding: 8px;
+}
+.crdText button{
+  width: 110px;
+  height: 33px;
+  border: none;
+  border-radius: 1rem;
+  background-color: rgb(5, 141, 141);
+  color: white;
+  font-size: 19px;
+  margin-top: 11px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  
+}
+.crdText button:hover{
+  background-color: #f02e2e;
+  transform: scale(1.1);
+  
+}
+
+.crdText i{
+  color: rgb(255, 149, 0);
+}
+
+.blog{
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 300px;
+  background-color: #fff;
+  margin-inline: 22px;
+  border-radius: 11px;
+ 
+}
+.blog:hover{
+  transition: 0.6s ease;
+  width: 520px;
+  height: 320px;
+}
+.blog img{
+  padding: 22px;
+  width: 85%;
+}
+.blogText{
+  padding: 12px;
+  margin-top: 33px;
+}
+.blogText a{
+  width: 130px;
+  padding: 4px;
+  height: 18px;
+  background-color: rgb(4, 136, 136);
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+position: relative;
+top: 33px;
+}
+.letter{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color:rgb(2, 2, 66);
+  padding: 43px;
+}
+.inp{
+  display: flex;
+}
+.inp input{
+  width: 330px;
+  height: 33px;
+  outline: none;
+  font-size: 18px;
+  border: none;
+}
+.inp button{
+  width: 100px;
+  height: 33px;
+  background-color: rgb(2, 173, 173);
+  color: white;
+  border: none;
+  transition: transform 0.3s ease,  0.3s ease;
+}
+
+.inp button:hover{
+  background-color: orange;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  padding: 53px;
+}
+.footer .footerText{
+  margin-inline: 85px;
+}
+.footerText p{
+  margin-top: 11px;
+}
+
+/* about */
+.about{
+  display: none;
+}
+.aboutus{
+  background-color: rgb(1, 1, 42);
+  color: white;
+  padding: 56px;
+  font-size: 19px;
+}
+.me{
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  background-color: #fff;
+  padding: 33px;
+  margin-left: 18%;
+  margin-top: 7%;
+}
+.me img{
+  width: 54%;
+}
+
+/* /contact */
+
+.contact{
+  display: none;
+}
+.contactus{
+  background-color: rgb(1, 1, 42);
+  color: white;
+  padding: 56px;
+  font-size: 19px;
+}
+
+.contactMe{
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  margin-top: 5%;
+  background-color: #fff;
+  margin-left: 10%;
+
+}
+.contactMe img{
+  width: 55%;
+}
+
+.contactText{
+  padding: 22px;
+  width: 600px;
+}
+.contactText p{
+  margin-top: 12px;
+}
+.form{
+  text-align: center;
+  margin-top: 5%;
+  padding: 22px;
+}
+.form input{
+  width: 300px;
+  padding: 5px;
+  height: 27px;
+  margin-top: 11px;
+}
+.form button{
+  width: 300px;
+  height: 36px;
+  background-color: rgb(2, 54, 54);
+  color: white;
+  font-size: 22px;
+  border: none;
+  margin-top: 22px;
+  
+}
+
+/* cart */
+
+.cart{
+  display: flex;
+  justify-content: center;
+  display: none;
+
+}
+.cartText{
+  padding: 22px;
+  margin-top: 22px;
+}
+.cartText p{
+  margin-top: 12px;
+}
+.cartText h2{
+  margin-top: 11px;
+}
+.cartText .btn button{
+  width: 140px;
+  height: 40px;
+  background-color: rgb(255, 89, 0);
+  color: white;
+  border: none;
+  font-size: 22px;
+  margin-inline: 11px;
+  margin-top: 22px;
+}
+.cartText .back{
+  width: 140px;
+  height: 40px;
+  background-color:rgb(4, 81, 81);
+  color: white;
+  border: none;
+  font-size: 22px;
+  margin-inline: 11px;
+  margin-top: 22px;
+  margin-top: 22px;
+}
+@media (max-width: 768px) {
+  nav .logo{
+    margin: 4px;
+    font-size: 16px;
+  }
+  nav i{
+    margin-top: -3px;
+  }
+  .lii{
+    display: flex;
+  }
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    flex-wrap: wrap;
+  }
+
+  .contactMe {
+    flex-direction: column;
+  }
+
+  .cart-icon {
+    position: absolute;
+    top: 50px; /* Adjust to match your design */
+    right: 20px; /* Adjust to match your design */
+    transform: translate(0, 0);
+  }
+
+  /* Footer adjustments for 768px screen size */
+  footer {
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Ensure footer takes full width */
+  }
+
+  footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  footer .footer-content ul {
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .footer-content li {
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  footer .footer-content li a {
+    font-size: 14px;
+    padding: 8px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  footer .social-icons i {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  /* Navigation bar adjustments */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%; /* Ensure it takes full width */
+  }
+
+  /* Logo adjustments */
+  nav .logo {
+    margin: 0;
+    font-size: 18px; /* Reduce logo size for smaller screens */
+    text-align: center;
+  }
+
+  /* Navigation menu adjustments */
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 0 0;
+    padding: 0;
+    width: 100%; /* Ensure full-width for the list */
+  }
+
+  /* List item adjustments */
+  nav ul li {
+    margin: 5px 0;
+    width: 100%; /* Ensure full width for each item */
+    text-align: center; /* Center text */
+  }
+
+  /* Link (a) adjustments */
+  ul li a {
+    font-size: 16px; /* Reduce font size for smaller screens */
+    margin: 5px 0;
+    padding: 10px; /* Add some padding for better clickable area */
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Icon adjustments */
+  ul li i {
+    font-size: 18px; /* Adjust icon size */
+    margin-top: 5px; /* Reduce the space above icons */
+  }
+
+  /* Cart icon adjustments */
+  .cart-icon {
+    position: absolute;
+    top: 20px; /* Adjust to match your design */
+    right: 20px; /* Adjust to match your design */
+    transform: translate(0, 0);
+  }
+
+  /* Footer adjustments for 420px screen size */
+  footer {
+    padding: 15px;
+    text-align: center;
+    width: 100%; /* Ensure footer takes full width */
+  }
+
+  footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  footer .footer-content ul {
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .footer-content li {
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  footer .footer-content li a {
+    font-size: 14px;
+    padding: 8px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  footer .social-icons i {
+    font-size: 18px;
+  }
+}
+
+
