@@ -34,6 +34,11 @@ function homes() {
   card2.style.display = "block";
   blog.style.display = "block";
   document.getElementById("home").style.color = "rgb(2, 173, 173)";
+
+  window.scrollTo({
+    top: 0,      // Scroll to the top of the page
+    behavior: 'smooth' // Smooth scrolling effect
+  });
 }
 
 // Shop function
@@ -44,16 +49,13 @@ function shops() {
   card.style.display = "block";
   card2.style.display = "block";
   document.getElementById("shop").style.color = "rgb(2, 173, 173)";
+
+  window.scrollTo({
+    top: 0,      // Scroll to the top of the page
+    behavior: 'smooth' // Smooth scrolling effect
+  });
 }
 
-// Blog function
-function blogs() {
-  resetSections();
-  resetNavColors();
-
-  blog.style.display = "block";
-  document.getElementById("blog").style.color = "rgb(2, 173, 173)";
-}
 
 // About function
 function abouts() {
@@ -62,6 +64,11 @@ function abouts() {
 
   about.style.display = "block";
   document.getElementById("about").style.color = "rgb(2, 173, 173)";
+
+  window.scrollTo({
+    top: 0,      // Scroll to the top of the page
+    behavior: 'smooth' // Smooth scrolling effect
+  });
 }
 
 // Contact function
@@ -69,20 +76,24 @@ function contacts() {
   resetSections();
   resetNavColors();
 
+  document.querySelectorAll(".footer").forEach(footer => {
+    footer.style.display = "none";
+  });
+  
+  document.querySelectorAll(".letter").forEach(footer => {
+    footer.style.display = "none";
+  });
+
   contact.style.display = "block";
   document.getElementById("contact").style.color = "rgb(2, 173, 173)";
+
+  window.scrollTo({
+    top: 0,      // Scroll to the top of the page
+    behavior: 'smooth' // Smooth scrolling effect
+  });
 }
 
-// Cart function to show selected item
-function show(img) {
-  const newImg = document.getElementById("newImg");
-  if (newImg && img) {
-    newImg.src = img.src;
-  }
 
-  resetSections();
-  document.querySelector(".cart").style.display = "flex";
-}
 
 // Add to cart function
 function addCart() {

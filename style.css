@@ -72,6 +72,7 @@ ul li i:hover{
   font-size: 22px;
   color: white;
   margin-top: 24px;
+  cursor: pointer;
 }
 .mainText .btn2{
   margin-left: 4px;
@@ -83,6 +84,7 @@ ul li i:hover{
   border: 1px solid black;
   color: rgb(0, 0, 0);
   margin-top: 24px;
+  cursor: pointer;
 }
 .mainText p{
   margin-top: 12px;
@@ -108,7 +110,7 @@ ul li i:hover{
 }
 .card .crd{
   width: 300px;
-  height: 500px;
+  height: 550px;
   background-color: #fff;
   margin-inline: 11px;
  
@@ -122,6 +124,7 @@ ul li i:hover{
 }
 .crd img:hover{
   transform: scale(1.1);
+  cursor: pointer;
 }
 .crdText{
   margin-left: 16px;
@@ -161,13 +164,15 @@ ul li i:hover{
  
 }
 .blog:hover{
-  transition: 0.6s ease;
+  transition: 0.3s ease;
   width: 520px;
   height: 320px;
+  
 }
 .blog img{
   padding: 22px;
   width: 85%;
+  cursor: pointer;
 }
 .blogText{
   padding: 12px;
@@ -188,7 +193,7 @@ top: 33px;
   display: flex;
   justify-content: space-between;
   color: white;
-  background-color:rgb(2, 2, 66);
+  background-color:rgb(66, 24, 56);
   padding: 43px;
 }
 .inp{
@@ -300,7 +305,11 @@ top: 33px;
   font-size: 22px;
   border: none;
   margin-top: 22px;
-  
+  cursor: pointer; 
+}
+.form button:hover{
+  background-color: rgb(86, 54, 230);
+  transition: calc(00.3s)
 }
 
 /* cart */
@@ -311,216 +320,11 @@ top: 33px;
   display: none;
 
 }
-.cartText{
-  padding: 22px;
-  margin-top: 22px;
-}
-.cartText p{
-  margin-top: 12px;
-}
-.cartText h2{
-  margin-top: 11px;
-}
-.cartText .btn button{
-  width: 140px;
-  height: 40px;
-  background-color: rgb(255, 89, 0);
-  color: white;
-  border: none;
-  font-size: 22px;
-  margin-inline: 11px;
-  margin-top: 22px;
-}
-.cartText .back{
-  width: 140px;
-  height: 40px;
-  background-color:rgb(4, 81, 81);
-  color: white;
-  border: none;
-  font-size: 22px;
-  margin-inline: 11px;
-  margin-top: 22px;
-  margin-top: 22px;
-}
-@media (max-width: 768px) {
-  nav .logo{
-    margin: 4px;
-    font-size: 16px;
-  }
-  nav i{
-    margin-top: -3px;
-  }
-  .lii{
-    display: flex;
-  }
-  .main {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .card {
-    flex-wrap: wrap;
-  }
 
-  .contactMe {
-    flex-direction: column;
-  }
 
-  .cart-icon {
-    position: absolute;
-    top: 50px; /* Adjust to match your design */
-    right: 20px; /* Adjust to match your design */
-    transform: translate(0, 0);
-  }
 
-  /* Footer adjustments for 768px screen size */
-  footer {
-    padding: 20px;
-    text-align: center;
-    width: 100%; /* Ensure footer takes full width */
-  }
 
-  footer .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
 
-  footer .footer-content ul {
-    padding: 0;
-    margin: 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  footer .footer-content li {
-    margin: 5px 0;
-    text-align: center;
-  }
-
-  footer .footer-content li a {
-    font-size: 14px;
-    padding: 8px;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-  }
-
-  footer .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  footer .social-icons i {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  /* Navigation bar adjustments */
-  nav {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    width: 100%; /* Ensure it takes full width */
-  }
-
-  /* Logo adjustments */
-  nav .logo {
-    margin: 0;
-    font-size: 18px; /* Reduce logo size for smaller screens */
-    text-align: center;
-  }
-
-  /* Navigation menu adjustments */
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 0 0 0;
-    padding: 0;
-    width: 100%; /* Ensure full-width for the list */
-  }
-
-  /* List item adjustments */
-  nav ul li {
-    margin: 5px 0;
-    width: 100%; /* Ensure full width for each item */
-    text-align: center; /* Center text */
-  }
-
-  /* Link (a) adjustments */
-  ul li a {
-    font-size: 16px; /* Reduce font size for smaller screens */
-    margin: 5px 0;
-    padding: 10px; /* Add some padding for better clickable area */
-    text-align: center;
-    width: 100%;
-  }
-
-  /* Icon adjustments */
-  ul li i {
-    font-size: 18px; /* Adjust icon size */
-    margin-top: 5px; /* Reduce the space above icons */
-  }
-
-  /* Cart icon adjustments */
-  .cart-icon {
-    position: absolute;
-    top: 20px; /* Adjust to match your design */
-    right: 20px; /* Adjust to match your design */
-    transform: translate(0, 0);
-  }
-
-  /* Footer adjustments for 420px screen size */
-  footer {
-    padding: 15px;
-    text-align: center;
-    width: 100%; /* Ensure footer takes full width */
-  }
-
-  footer .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-
-  footer .footer-content ul {
-    padding: 0;
-    margin: 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  footer .footer-content li {
-    margin: 5px 0;
-    text-align: center;
-  }
-
-  footer .footer-content li a {
-    font-size: 14px;
-    padding: 8px;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-  }
-
-  footer .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  footer .social-icons i {
-    font-size: 18px;
-  }
-}
 
 
