@@ -1,10 +1,10 @@
 // Selectors
+const mainPage = document.querySelector(".main");
 const card = document.querySelector(".trend");
 const card2 = document.getElementById("trendSec");
 const about = document.querySelector(".about");
 const contact = document.querySelector(".contact");
 const blog = document.querySelector(".trends");
-const mainPage = document.querySelector(".main");
 const navLinks = document.querySelectorAll("nav ul li a");
 
 // Helper function to reset section visibility
@@ -49,6 +49,14 @@ function shops() {
   card.style.display = "block";
   card2.style.display = "block";
   document.getElementById("shop").style.color = "rgb(2, 173, 173)";
+
+  document.querySelectorAll(".footer").forEach(footer => {
+    footer.style.display = "none";
+  });
+  
+  document.querySelectorAll(".letter").forEach(footer => {
+    footer.style.display = "none";
+  });
 
   window.scrollTo({
     top: 0,      // Scroll to the top of the page
