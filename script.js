@@ -107,4 +107,5 @@ function contacts() {
 function addCart() {
   alert("Added to Cart");
   location.reload(); // Reload the page to reset states
+  
 }
