@@ -107,13 +107,15 @@ function contacts() {
 function addCart() {
   alert("Added to Cart");
   location.reload(); // Reload the page to reset states
-  
-}
-let cartCount = 0;
 
-      function addCart() {
-          cartCount++;
-          const cartCounter = document.getElementById("cart-count");
-          cartCounter.textContent = cartCount;
-          cartCounter.style.display = "inline-block";
-      }
+  
+  let cartCount = 0;
+  function addCart() {
+    cartCount++;
+    const cartCounter = document.getElementById("cart-count");
+    
+}
+
+
+      
+          
