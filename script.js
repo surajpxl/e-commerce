@@ -1,5 +1,4 @@
 // Selectors
-
 const mainPage = document.querySelector(".main");
 const card = document.querySelector(".trend");
 const card2 = document.getElementById("trendSec");
@@ -41,7 +40,6 @@ function homes() {
     behavior: 'smooth' // Smooth scrolling effect
   });
 }
-
 
 // Shop function
 function shops() {
@@ -123,13 +121,3 @@ function addCart() {
 
       
           
-
-
-window.addEventListener("scroll", function () {
-  const nav = document.querySelector("nav");
-  if (window.scrollY > 50) {
-      nav.classList.add("scrolled");
-  } else {
-      nav.classList.remove("scrolled");
-  }
-});
