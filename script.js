@@ -126,10 +126,10 @@ function addCart() {
 
 
 window.addEventListener("scroll", function () {
-  const navbar = document.getElementById("navbar");
+  const nav = document.querySelector("nav");
   if (window.scrollY > 50) {
-      navbar.classList.add("scrolled");
+      nav.classList.add("scrolled");
   } else {
-      navbar.classList.remove("scrolled");
+      nav.classList.remove("scrolled");
   }
 });
