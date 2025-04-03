@@ -101,8 +101,6 @@ function contacts() {
   });
 }
 
-
-
 // Add to cart function
 let cartCount = 0;
 function addCart() {
