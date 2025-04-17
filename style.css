@@ -328,7 +328,404 @@ top: 33px;
 
 
 
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul li a {
+    margin-inline: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mainText h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .crd {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .blog {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .letter {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .inp {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inp input {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .inp button {
+    width: 90%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .me {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .contactMe {
+    flex-direction: column;
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .contactText {
+    width: 100%;
+  }
+
+  .form input,
+  .form button {
+    width: 90%;
+  }
+}
 
 
 
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+  }
 
+  ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li a {
+    font-size: 16px;
+    margin-bottom: 8px;
+    padding: 10px;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .mainText h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .mainText .btn1,
+  .mainText .btn2 {
+    width: 90%;
+    font-size: 18px;
+   
+    
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .crd {
+    width: 95%;
+    margin-bottom: 15px;
+  }
+
+  .blog {
+    width: 65%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .letter {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .inp {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .inp input {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+
+  .inp button {
+    width: 95%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .me {
+    width: 91%;
+    margin-left: 0;
+  }
+
+  .contactMe {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .contactText {
+    width: 100%;
+  }
+
+  .form input,
+  .form button {
+    width: 95%;
+  }
+}
+@media (max-width: 320px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li a {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .mainText h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .mainText .btn1,
+  .mainText .btn2 {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .crd {
+    width: 100%;
+    margin-bottom: 10px;
+
+  }
+
+  .blog {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .letter {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .inp {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inp input {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .inp button {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .me {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .contactMe {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .contactText {
+    width: 100%;
+  }
+
+  .form input,
+  .form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 280px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 3px;
+    width: 100%;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li a {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+    padding: 3px;
+  }
+
+  .mainText h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .mainText .btn1,
+  .mainText .btn2 {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .crd {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .blog {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+  }
+
+  .letter {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .inp {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inp input {
+    width: 100%;
+    margin-bottom: 3px;
+  }
+
+  .inp button {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .me {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .contactMe {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .contactText {
+    width: 100%;
+  }
+
+  .form input,
+  .form button {
+    width: 100%;
+  }
+}
