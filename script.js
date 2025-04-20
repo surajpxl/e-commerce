@@ -53,7 +53,7 @@ function shops() {
   document.querySelectorAll(".footer").forEach(footer => {
     footer.style.display = "none";
   });
-  
+
   document.querySelectorAll(".letter").forEach(footer => {
     footer.style.display = "none";
   });
@@ -87,7 +87,7 @@ function contacts() {
   document.querySelectorAll(".footer").forEach(footer => {
     footer.style.display = "none";
   });
-  
+
   document.querySelectorAll(".letter").forEach(footer => {
     footer.style.display = "none";
   });
@@ -107,15 +107,15 @@ function addCart() {
   alert("Added to Cart");
   // location.reload(); // Reload the page to reset states
 
-  
-  
-    cartCount++;
-    const cartCounter = document.getElementById("cart-count");
-    cartCounter.textContent = cartCount;
-          cartCounter.style.display = "inline-block";
-      
+
+
+  cartCount++;
+  const cartCounter = document.getElementById("cart-count");
+  cartCounter.textContent = cartCount;
+  cartCounter.style.display = "inline-block";
+
 }
 
 
-      
-          
+
+
