@@ -184,15 +184,50 @@
           <!-- <img src="images/map.PNG" alt="" /> -->
         </div>
 
-        <div class="form">
+        <form id="contactForm" class="form" target="_blank">
           <h1>Connect with Us. Fill the Form</h1>
-          <input type="text" placeholder="First Name" required /> <br />
-          <input type="text" placeholder="Last Name" required /> <br />
-          <input type="email" placeholder="Enter Your Email" required /> <br />
-          <input type="id" placeholder="ID (any)" required /> <br />
-          <input type="contact" placeholder="Contact No" required /> <br />
-          <button onclick="alert('Form Submitted!')">Submit</button>
+          <input type="text" name="firstName" placeholder="First Name" required /> <br />
+          <input type="text" name="lastName" placeholder="Last Name" required /> <br />
+          <input type="email" name="email" placeholder="Enter Your Email" required /> <br />
+          <input type="text" name="id" placeholder="ID (any)" required /> <br />
+          <input type="tel" name="contactNo" placeholder="Contact No" required /> <br />
+          <button type="submit">Submit</button>
+        </form>
+        <div id="successMessage" style="display: none; text-align: center; margin-top: 20px;">
+          <h2>Thanks!</h2>
+          <p>The form was submitted successfully.</p>
+            <a href="#" onclick="window.close();">Go back</a>
         </div>
+        <script>
+          document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const jsonObject = Object.fromEntries(formData.entries());
+            fetch('https://formspree.io/f/mdkeqvga', {
+              method: 'POST',
+              headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(jsonObject),
+            })
+            .then(response => {
+              if (response.ok) {
+                const newTab = window.open('', '_blank');
+                newTab.document.write(`
+                  <h2>Thanks!</h2>
+                  <p>The form was submitted successfully.</p>
+                  <a href="#" onclick="window.close();">Go back</a>
+                `);
+              } else {
+                return response.json().then(data => {
+                  throw new Error(data.error || 'Form submission failed');
+                });
+              }
+            })
+            .catch(error => console.error('Error:', error));
+          });
+        </script>
       </div>
       <!-- cart -->
 
