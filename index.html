@@ -1,216 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-commerce GLA(mini project)</title>
-    <link rel="stylesheet" href="style.css" />
-    <script 
-      src="https://kit.fontawesome.com/f30fac2c61.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-commerce GLA(mini project)</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <body>
-    <div class="container">
-      <nav>
-        <div class="logo">
-          <h1>S-Mart</h1>
-        </div>
-        <ul>
-          <li class="lii">
-            <a id="home" onclick="homes()">Home</a>
-            <a id="shop" onclick="shops()">Shops</a>
-            <a id="about" onclick="abouts()">About</a>
-            <a id="contact" onclick="contacts()">Contact</a>
-            
-              <i class="fa-solid fa-cart-shopping cart-container"></i>
-              <span id="cart-count" class="cart-counter cart-container">0</span>
-          
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet" />
+</head>
 
-          </li>
-        </ul>
-      </nav>
-
-      <!-- mainpage -->
-
-      <div class="main">
-        <div class="mainText">
-          <h1 class="top poppins-thin">Season Sale</h1>
-          <h1>On All Products</h1>
-          <p>Your One-Stop Online Shop for Everything You Need</p>
-          <button class="btn1">Explore</button>
-          <button class="btn2">Join Now</button>
-        </div>
-        <img class=".image" src="images/main5.png" alt="" />
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <h1>S-Mart</h1>
       </div>
+      <ul>
+        <li class="lii">
+          <a id="home" onclick="homes()">Home</a>
+          <a id="shop" onclick="shops()">Shops</a>
+          <a id="about" onclick="abouts()">About</a>
+          <a id="contact" onclick="contacts()">Contact</a>
 
-      <!--Men cards -->
+          <i class="fa-solid fa-cart-shopping cart-container"></i>
+          <span id="cart-count" class="cart-counter cart-container">0</span>
 
-      <div class="trend">
-        <div class="head">
-          <h1>S-Mart <span>Men's Wear</span></h1>
+
+        </li>
+      </ul>
+    </nav>
+
+    <!-- mainpage -->
+
+    <div class="main">
+      <div class="mainText">
+        <h1 class="top poppins-thin">Season Sale</h1>
+        <h1>On All Products</h1>
+        <p>Your One-Stop Online Shop for Everything You Need</p>
+        <button class="btn1">Explore</button>
+        <button class="btn2">Join Now</button>
+      </div>
+      <img class=".image" src="images/main5.png" alt="" />
+    </div>
+
+    <!--Men cards -->
+
+    <div class="trend">
+      <div class="head">
+        <h1>S-Mart <span>Men's Wear</span></h1>
+      </div>
+      <div class="card">
+        <div class="crd">
+          <img src="images/men1.jpg" alt="" onclick="show(this)" />
+          <div class="crdText">
+            <h2>Cotton Trending Shirt's</h2>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i> <br />
+            <button onclick="addCart()">Add to Cart</button>
+
+          </div>
         </div>
-        <div class="card">
-          <div class="crd">
-            <img src="images/men1.jpg" alt="" onclick="show(this)" />
-            <div class="crdText">
-              <h2>Cotton Trending Shirt's</h2>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i> <br />
-              <button onclick="addCart()">Add to Cart</button>
-              
-            </div>
-          </div>
 
-          <div class="crd">
-            <img src="images/men2.jpg" alt="" onclick="show(this)" />
-            <div class="crdText">
-              <h2>Cotton T-shirt's</h2>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i> <br />
-              <button onclick="addCart()">Add to Cart</button>
-            </div>
+        <div class="crd">
+          <img src="images/men2.jpg" alt="" onclick="show(this)" />
+          <div class="crdText">
+            <h2>Cotton T-shirt's</h2>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i> <br />
+            <button onclick="addCart()">Add to Cart</button>
           </div>
-          <div class="crd">
-            <img src="images/men3.jpg" alt="" onclick="show(this)" />
-            <div class="crdText">
-              <h2>Cotton Trending Shirt's</h2>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i> <br />
-              <button onclick="addCart()">Add to Cart</button>
-            </div>
+        </div>
+        <div class="crd">
+          <img src="images/men3.jpg" alt="" onclick="show(this)" />
+          <div class="crdText">
+            <h2>Cotton Trending Shirt's</h2>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i> <br />
+            <button onclick="addCart()">Add to Cart</button>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Women Card -->
+    <!-- Women Card -->
 
-      <div class="trend" id="trendSec">
-        <div class="head">
-          <h1>S-Mart <span>Women's Wear</span></h1>
+    <div class="trend" id="trendSec">
+      <div class="head">
+        <h1>S-Mart <span>Women's Wear</span></h1>
+      </div>
+      <div class="card">
+        <div class="crd">
+          <img src="images/women1.jpg" alt="" />
+          <div class="crdText">
+            <h2>Trending Girl Top's</h2>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i> <br />
+            <button onclick="addCart()">Add to Cart</button>
+          </div>
         </div>
-        <div class="card">
-          <div class="crd">
-            <img src="images/women1.jpg" alt="" />
-            <div class="crdText">
-              <h2>Trending Girl Top's</h2>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i> <br />
-              <button onclick="addCart()">Add to Cart</button>
-            </div>
-          </div>
 
-          <div class="crd">
-            <img src="images/women2.jpg" alt="" onclick="show(this)" />
-            <div class="crdText">
-              <h2>Trending Girl Top's</h2>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i> <br />
-              <button onclick="addCart()">Add to Cart</button>
-            </div>
+        <div class="crd">
+          <img src="images/women2.jpg" alt="" onclick="show(this)" />
+          <div class="crdText">
+            <h2>Trending Girl Top's</h2>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i> <br />
+            <button onclick="addCart()">Add to Cart</button>
           </div>
+        </div>
 
-          <div class="crd">
-            <img src="images/women3.jpg" alt="" onclick="show(this)" />
-            <div class="crdText">
-              <h2>Trending Girl Top's</h2>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i> <br />
-              <button onclick="addCart()">Add to Cart</button>
-            </div>
+        <div class="crd">
+          <img src="images/women3.jpg" alt="" onclick="show(this)" />
+          <div class="crdText">
+            <h2>Trending Girl Top's</h2>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i> <br />
+            <button onclick="addCart()">Add to Cart</button>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- about us -->
+    <!-- about us -->
 
-      <div class="about">
-        <div class="aboutus">
-          <h1>#GetToKnowUs</h1>
+    <div class="about">
+      <div class="aboutus">
+        <h1>#GetToKnowUs</h1>
+        <p>
+          We're dedicated to providing you with the ultimate online shopping experience. Our carefully selected
+          collection showcases premium products, crafted to meet your desires add go beyond your expectations
+        </p>
+      </div>
+
+      <div class="me">
+        <img src="images/lap.png" alt="" />
+        <div class="aboutText">
+          <h1>Who We Are?</h1>
           <p>
-           We're dedicated to providing you with the ultimate online shopping experience. Our carefully selected collection showcases premium products, crafted to meet your desires add go beyond your expectations
+            We are a passionate team dedicated to delivering the best online shopping experience. With a focus on
+            quality, we handpick every product to ensure it meets your needs and exceeds your expectations. Our mission
+            is to provide excellent service and make you shopping journey seamless and enjoyable.
           </p>
         </div>
+      </div>
+    </div>
 
-        <div class="me">
-          <img src="images/lap.png" alt="" />
-          <div class="aboutText">
-            <h1>Who We Are?</h1>
-            <p>
-              We are a passionate team dedicated to delivering the best online shopping experience. With a focus on quality, we handpick every product to ensure it meets your needs and exceeds your expectations. Our mission is to provide excellent service and make you shopping journey seamless and enjoyable.
-            </p>
-          </div>
+    <!-- contact -->
+
+    <div class="contact">
+      <div class="contactMe">
+        <div class="contactText">
+          <h1>
+            Visit Our Office or Contact <br />
+            Us Today
+          </h1>
+          <p>Address : D Park, Noida, India.</p>
+          <p>Contact : guptasuraj4455@gmail.com</p>
+          <p>Number : 9119614132</p>
         </div>
+        <!-- <img src="images/map.PNG" alt="" /> -->
       </div>
 
-      <!-- contact -->
-
-      <div class="contact">
-        <div class="contactMe">
-          <div class="contactText">
-            <h1>
-              Visit Our Office or Contact <br />
-              Us Today
-            </h1>
-            <p>Address : D Park, Noida, India.</p>
-            <p>Contact : guptasuraj4455@gmail.com</p>
-            <p>Number : 9119614132</p>
-          </div>
-          <!-- <img src="images/map.PNG" alt="" /> -->
-        </div>
-
-        <form id="contactForm" class="form" target="_blank">
-          <h1>Connect with Us. Fill the Form</h1>
-          <input type="text" name="firstName" placeholder="First Name" required /> <br />
-          <input type="text" name="lastName" placeholder="Last Name" required /> <br />
-          <input type="email" name="email" placeholder="Enter Your Email" required /> <br />
-          <input type="text" name="id" placeholder="ID (any)" required /> <br />
-          <input type="tel" name="contactNo" placeholder="Contact No" required /> <br />
-          <button type="submit">Submit</button>
-        </form>
-        <div id="successMessage" style="display: none; text-align: center; margin-top: 20px;">
-          <h2>Thanks!</h2>
-          <p>The form was submitted successfully.</p>
-            <a href="#" onclick="window.close();">Go back</a>
-        </div>
-        <script>
-          document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const formData = new FormData(event.target);
-            const jsonObject = Object.fromEntries(formData.entries());
-            fetch('https://formspree.io/f/mdkeqvga', {
-              method: 'POST',
-              headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
-              },
-              body: JSON.stringify(jsonObject),
-            })
+      <form id="contactForm" class="form" target="_blank">
+        <h1>Connect with Us. Fill the Form</h1>
+        <input type="text" name="firstName" placeholder="First Name" required /> <br />
+        <input type="text" name="lastName" placeholder="Last Name" required /> <br />
+        <input type="email" name="email" placeholder="Enter Your Email" required /> <br />
+        <input type="text" name="id" placeholder="ID (any)" required /> <br />
+        <input type="tel" name="contactNo" placeholder="Contact No" required /> <br />
+        <button type="submit">Submit</button>
+      </form>
+      <div id="successMessage" style="display: none; text-align: center; margin-top: 20px;">
+        <h2>Thanks!</h2>
+        <p>The form was submitted successfully.</p>
+        <a href="#" onclick="window.close();">Go back</a>
+      </div>
+      <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+          event.preventDefault();
+          const formData = new FormData(event.target);
+          const jsonObject = Object.fromEntries(formData.entries());
+          fetch('https://formspree.io/f/mdkeqvga', {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(jsonObject),
+          })
             .then(response => {
               if (response.ok) {
                 const newTab = window.open('', '_blank');
@@ -226,103 +225,104 @@
               }
             })
             .catch(error => console.error('Error:', error));
-          });
-        </script>
+        });
+      </script>
+    </div>
+    <!-- cart -->
+
+    <!-- blogs -->
+    <div class="trends">
+      <div class="head">
+        <h1>Trending <span>Collections</span></h1>
       </div>
-      <!-- cart -->
+      <div class="card">
+        <div class="blog">
+          <img src="images/blog1.jpg" alt="" />
+          <div class="blogText">
+            <h2>Trending Girl Clothes</h2>
+            <p>
+              Discover the latest trends in women's fashion with our exclusive
+              collection of stylish and comfortable clothing.
+            </p>
 
-      <!-- blogs -->
-      <div class="trends">
-        <div class="head">
-          <h1>Trending <span>Collections</span></h1>
-        </div>
-        <div class="card">
-          <div class="blog">
-            <img src="images/blog1.jpg" alt="" />
-            <div class="blogText">
-              <h2>Trending Girl Clothes</h2>
-              <p>
-                Discover the latest trends in women's fashion with our exclusive
-                collection of stylish and comfortable clothing.
-              </p>
-
-              <a href="https://www.houseofindya.com/">Read More</a>
-            </div>
-          </div>
-
-          <div class="blog">
-            <img src="images/blog2.jpg" alt="" />
-            <div class="blogText">
-              <h2>Trending Boys Clothes</h2>
-              <p>
-                Explore our collection of the latest boys' fashion trends,
-                offering a perfect blend of comfort and style.
-              </p>
-
-              <a href="https://www.houseofindya.com/menswear">Read More</a>
-            </div>
+            <a href="https://www.houseofindya.com/">Read More</a>
           </div>
         </div>
-      </div>
 
-      <!-- Letter -->
+        <div class="blog">
+          <img src="images/blog2.jpg" alt="" />
+          <div class="blogText">
+            <h2>Trending Boys Clothes</h2>
+            <p>
+              Explore our collection of the latest boys' fashion trends,
+              offering a perfect blend of comfort and style.
+            </p>
 
-      <div class="letter">
-        <div class="letterText">
-          <h1>Join Our Exclusive Newsletter</h1>
-          <p>
-            Be the first to know about the latest fashion trends, special deals, and exciting updates-delivered straight to your inbox!
-          </p>
-        </div>
-
-        <div class="inp">
-          <input type="email" required placeholder="Enter Your Email" />
-          <button>Sign Up</button>
-        </div>
-      </div>
-
-      <!-- Footer -->
-
-      <div class="footer">
-        <div class="footerText">
-          <h2>Trends</h2>
-          <p>Stay ahead with the latest fashion styles.</p>
-          <p>New collections added regularly</p>
-          <p>Exclusive offres and updates.</p>
-          <p></p>
-        </div>
-        <div class="footerText">
-          <h2>About Us</h2>
-          <p>
-            Address: 123 D Park, Noida City - Your destination for high-end, on-trend fashion.
-          </p>
-          <p>
-            Committed to quality and customer satisfaction.
-          </p>
-          <p>Your fashion, our passion</p>
-
-          
-        </div>
-        <div class="footerText">
-          <h2>Contact Us</h2>
-          <p>+91-8004514132</p>
-          <p>support@smart.com</p>
-          <p>Follow us on social media for the latest updates!</p>
-          
-        </div>
-        <div class="footerText">
-          <h2>Trending Now</h2>
-          <p>Check out the hottest styles of the season.</p>
-          <p>Customer favorites and top-rated products.</p>
-          <p>Shop our limited-time promotions!</p>
-          <p></p>
+            <a href="https://www.houseofindya.com/menswear">Read More</a>
+          </div>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
-    <script>
-      
-  </script>
-  </body>
-</html>
 
+    <!-- Letter -->
+
+    <div class="letter">
+      <div class="letterText">
+        <h1>Join Our Exclusive Newsletter</h1>
+        <p>
+          Be the first to know about the latest fashion trends, special deals, and exciting updates-delivered straight
+          to your inbox!
+        </p>
+      </div>
+
+      <div class="inp">
+        <input type="email" required placeholder="Enter Your Email" />
+        <button>Sign Up</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+      <div class="footerText">
+        <h2>Trends</h2>
+        <p>Stay ahead with the latest fashion styles.</p>
+        <p>New collections added regularly</p>
+        <p>Exclusive offres and updates.</p>
+        <p></p>
+      </div>
+      <div class="footerText">
+        <h2>About Us</h2>
+        <p>
+          Address: 123 D Park, Noida City - Your destination for high-end, on-trend fashion.
+        </p>
+        <p>
+          Committed to quality and customer satisfaction.
+        </p>
+        <p>Your fashion, our passion</p>
+
+
+      </div>
+      <div class="footerText">
+        <h2>Contact Us</h2>
+        <p>+91-8004514132</p>
+        <p>support@smart.com</p>
+        <p>Follow us on social media for the latest updates!</p>
+
+      </div>
+      <div class="footerText">
+        <h2>Trending Now</h2>
+        <p>Check out the hottest styles of the season.</p>
+        <p>Customer favorites and top-rated products.</p>
+        <p>Shop our limited-time promotions!</p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>
